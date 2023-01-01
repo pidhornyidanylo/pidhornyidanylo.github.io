@@ -1,0 +1,42 @@
+body {
+    font-size: 21px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    flex: .5;
+    position: relative;
+    cursor: pointer;
+    margin: 10px;
+    transition: flex .7s ease;
+}
+
+.card h3 {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    opacity: 0;
+    transition: .7s ease;
+}
+
+.card.active {
+    flex: 5;
+}
+
+.card.active h3 {
+    opacity: 1;
+}
