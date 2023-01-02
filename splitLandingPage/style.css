@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --hover-width: 75%;
+    --other-width: 25%;
+    --speed: 1000ms;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #333;
+
+    transition: all .7s ease;
+}
+
+.side {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.side.left {
+    left: 0;
+    background: url('/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.side.right {
+    right: 0;
+    background: url('/2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.side.right, .side.left {
+    transition: all var(--speed) ease-in-out;
+}
+
+h1 {
+    position: absolute;
+    font-size: 4rem;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.button {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 300px;
+    min-width: 300px;
+    height: 100px;
+    border: 5px solid #111;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.hover-left .left{
+    width: var(--hover-width);
+}
+
+.hover-left .right {
+    width: var(--other-width);
+}
+
+.hover-right .left{
+    width: var(--other-width);
+}
+
+.hover-right .right {
+    width: var(--hover-width);
+}
+
