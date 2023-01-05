@@ -1,0 +1,43 @@
+@import url('https://fonts.cdnfonts.com/css/muli');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e1e1e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    font-family: 'Muli', sans-serif;
+    overflow: hidden;
+}
+
+.key {
+    background-color: #eee;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .1);
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #111;
+    min-width: 150px;
+    padding: 20px;
+    margin: 10px;
+    position: relative;
+
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.key small {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -30px;
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+}
+
