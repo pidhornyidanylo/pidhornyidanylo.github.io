@@ -1,0 +1,42 @@
+@import url('https://fonts.cdnfonts.com/css/sudo-var');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sudo Var', sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    background-image: linear-gradient(#173124, #285f42, #173124);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+h3 {
+    position: absolute;
+    top: 50px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 100px;
+}
+
+.container {
+    width: 100%;
+    height: 150px;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container span {
+    width: 3px;
+    background-color: #fff;
+    display: block;
+    transition: all .2s linear;
+}
