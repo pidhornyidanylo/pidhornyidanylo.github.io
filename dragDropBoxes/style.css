@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: steelblue;
+}
+
+@media(max-width: 800px) {
+    body {
+        flex-direction: column;
+    }
+}
+
+div {
+    overflow: hidden;
+}
+
+.empty {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    background-color: white;
+    border: solid 3px black;
+}
+
+.fill {
+    height: 145px;
+    width: 145px;
+    background-image: url('/im.jpg');
+    cursor: pointer;
+}
+
+.hold {
+    border: solid 5px #ccc;
+}
+
+.hovered {
+    background-color: #333;
+    border-color: white;
+    border-style: dashed;
+}
