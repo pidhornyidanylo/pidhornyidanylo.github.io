@@ -1,0 +1,46 @@
+@import url('https://fonts.cdnfonts.com/css/protestant');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c7c7c7;
+    font-family: 'Protestant', sans-serif;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+canvas {
+    border: 3px solid steelblue;
+    background-color: #fff;
+}
+
+.toolbar {
+    background-color: steelblue;
+    border: 1px solid slateblue;
+    display: flex;
+    width: 806px;
+    padding: 1rem;
+}
+
+.toolbar > * {
+    background-color: #fff;
+    border: none;
+    padding: .25rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    height: 50px;
+    width: 50px;
+    margin: .25rem;
+    cursor: pointer;
+}
+
+.toolbar > *:last-child {
+    margin-left: auto;
+}
