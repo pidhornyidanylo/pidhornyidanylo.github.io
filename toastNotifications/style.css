@@ -1,0 +1,54 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+}
+
+
+.toast-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 250px;
+    text-align: right;
+}
+
+.toast {
+    padding: 10px;
+    display: inline-block;
+    background-color: #fff;
+    border: 0;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: left;
+    background-color: #fcfad3;
+    cursor: pointer;
+}
+
+button {
+    font-size: 21px;
+    padding: 1rem;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    background-color: #fcfad3;
+}
+
+button:active {
+    transform: scale(.99);
+}
+
+button:focus {
+    outline: none;
+}
