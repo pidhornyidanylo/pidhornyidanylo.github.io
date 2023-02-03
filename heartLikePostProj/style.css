@@ -1,0 +1,59 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;                                           
+    background-color: rgb(236, 236, 229);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 21px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+h3 i {
+    color: red;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}
+
+div {
+    height: 300px;
+    width: 200px;
+    background-image: url('https://picsum.photos/200/300');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    position: relative;
+    cursor: pointer;
+}
+
+div .fa-heart {
+    color: red;
+    position: absolute;
+    animation: grow .6s linear;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+@keyframes grow {
+    to {
+    transform: translate(-50%, -50%) scale(10);
+    opacity: 0;
+    } 
+}
