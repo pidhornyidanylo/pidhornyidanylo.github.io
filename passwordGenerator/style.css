@@ -1,0 +1,99 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #31398e;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    width: 260px;
+    padding: 20px 15px 15px 15px;
+    background-color: #2a2c6b;
+    box-shadow: rgba(250, 250, 250, 0.24) 0px 3px 8px;
+}
+
+h2 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+
+.result-container {
+    width: 100%;
+    display: flex;
+    position: relative;
+    background-color: #13152f;
+    padding: 2px;
+}
+
+.result-container span {
+    background-color: transparent;
+    color: #fff;
+    font-size: 12px;
+    width: 100%;
+    padding: 0 5px;
+}
+
+.result-container button {
+    width: 21px;
+    background-color: #31398e;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    padding: 0;
+}
+
+.settings {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.settings div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.settings div label {
+    color: #e3e3ec;
+    font-size: 11px;
+}
+
+.settings div input {
+    margin-right: 0;
+    cursor: pointer;
+}
+
+.settings div:first-child input {
+    width: 40px;
+    font-size: 11px;
+}
+
+.settings div input:focus {
+    outline: none;
+}
+
+#generate {
+    width: 100%;
+    margin: 0;
+    padding: 8px 10px;
+    background-color: #31398e;
+    cursor: pointer;
+    border: 0;
+    color: #fff;
+}
