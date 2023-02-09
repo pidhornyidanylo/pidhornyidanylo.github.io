@@ -1,0 +1,108 @@
+@import url('https://fonts.cdnfonts.com/css/lt-binary-neue');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #343334;
+    font-family: 'LT Binary Neue Round', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    margin: 20px;
+    width: 250px;
+    height: 400px;
+    cursor: pointer;
+}
+
+.card:hover .card-content {
+    transform: translateY(-50%);
+}
+
+.card:hover .card-cover {
+    transform: translateY(50%);
+    background-color: #eb005b;
+}
+
+.card:hover .card-cover h3 {
+    color: #fff;
+}
+
+.card:hover .card-cover i {
+    color: #fff;
+}
+
+.card-cover {
+    background-color: #343334;
+    position: absolute;
+    top: -25%;
+    padding: 10px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    transform: translateY(100%);
+    transition: transform .5s linear;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.card-cover h3 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #5a595b;
+    margin-bottom: 10px;
+}
+
+.card-cover div {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-cover i {
+    transform: scale(5);
+    color: #5a595b;
+}
+
+.card-content {
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    font-size: 18px;
+    position: absolute;
+    top: 75%;
+    height: 200px;
+    width: 100%;
+    padding: 5px 10px;
+    transform: translateY(-100%);
+    transition: transform .5s linear;
+    overflow: hidden;
+    z-index: -1;
+}
+
+button {
+    background-color: inherit;
+    border: 1px solid #343334;
+    padding: 8px 5px;
+    cursor: pointer;
+}
