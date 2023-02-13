@@ -1,0 +1,125 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(243, 242, 242);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.user-card {
+    width: 400px;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.filter {
+    background-color: #3352d6;
+    height: 180px;
+    padding: 30px 20px;
+}
+
+.filter h3 {
+    color: #fff;
+    font-size: 21px;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.filter p {
+    color: #f3f2f2;
+    margin-top: 5px;
+}
+
+.filter input {
+    width: 100%;
+    height: 40px;
+    padding: 5px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    background-color: #223a94;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.filter input:focus {
+    outline: none;
+}
+
+.filter input::placeholder {
+    color: #9c9c9c;
+    letter-spacing: .5px;
+}
+
+.users {
+    background-color: #fff;
+    position: absolute;
+    display: block;
+    top: 180px;
+    width: 100%;
+    height: 520px;
+    overflow-y: scroll;
+}
+
+.users::-webkit-scrollbar {
+    width: 12px;
+}
+
+.users::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.users::-webkit-scrollbar-thumb {
+    background: #afafaf;
+    border-radius: 15px;
+}
+
+.users::-webkit-scrollbar-thumb:hover {
+    background: #9c9c9c;
+}
+
+.user {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    padding: 25px 20px 25px 10px;
+    border-bottom: 1px solid #f3f2f2;
+}
+
+.user.hide {
+    display: none;
+}
+
+.user img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user .info h4 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.user .info small {
+    margin-top: 20px;
+    font-size: 16px;
+    letter-spacing: 0;
+}
