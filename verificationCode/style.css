@@ -1,0 +1,86 @@
+@import url('https://fonts.cdnfonts.com/css/open-sans');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.verify-container {
+    max-width: 500px;
+    height: 300px;
+    border: 2px solid #111;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 21px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #444444;
+    margin-bottom: 20px;
+}
+
+.inputs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.inputs input {
+    width: 70px;
+    height: 80px;   
+    margin-right: 6px;
+    position: relative;
+    color: black;
+    font-size: 60px;
+    text-align: center;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.inputs input::placeholder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+}
+
+.inputs input:last-child {
+    margin-right: 0;
+}
+
+.info {
+    width: 90%;
+    margin: auto;
+    background-color: lightgray;
+    color: #444444;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
