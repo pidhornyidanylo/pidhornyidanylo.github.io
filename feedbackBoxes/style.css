@@ -1,0 +1,77 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.panel {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 500px;
+    min-height: 320px;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.panel strong {
+    font-size: 21px;
+}
+
+.ratings {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ratings .rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 0;
+    cursor: pointer;
+}
+
+.ratings .rating small {
+    font-size: 18px;
+}
+
+.ratings .rating.active {
+    border-radius: 3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+button {
+    padding: 10px 25px;
+    border: none;
+    background-color:black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 40px;
+    font-size: 16px;
+    color: #fff;
+}
+
+button:active {
+    transform: scale(.98);
+}
+
+.fa {
+    color: red;
+    font-size: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
