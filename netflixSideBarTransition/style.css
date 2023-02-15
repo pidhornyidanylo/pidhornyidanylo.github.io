@@ -1,0 +1,135 @@
+@import url('https://fonts.cdnfonts.com/css/muli');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.page {
+    text-align: center;
+}
+
+.page p {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.page .btn-open {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    background-color: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    cursor: pointer; 
+    font-size: 20px;   
+}
+
+.page .btn-open:focus {
+    outline: none;
+}
+
+img {
+    width: 150px;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transition: transform .3s ease-in-out;
+    transform: translateX(-100%);
+}
+
+.nav.visible {
+    transform: translateX(0px);
+}
+
+.nav-black {
+    max-width: 480px;
+    width: 60%;
+    min-width: 320px;
+    background-color: rgb(4, 12, 15);
+    transition-delay: .4s;
+}
+
+.nav-black.visible {
+    transition-delay: 0s;
+}
+
+.nav-red {
+    width: 95%;
+    background-color: rgb(225, 20, 17);
+    transition-delay: .2s;
+}
+
+.nav-red.visible {
+    transition-delay: .2s;
+}
+
+.nav-white {
+    width: 95%;
+    background-color: #fff;
+    position: relative;
+    padding: 40px;
+    transition-delay: 0s;
+}
+
+.nav-white.visible {
+    transition-delay: .4s;
+}
+
+.btn-close {
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    background-color: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    cursor: pointer; 
+    font-size: 25px;  
+    color: black;
+    opacity: .4;
+}
+
+.list {
+    padding: 0;
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+.nav img {
+    margin-bottom: 10px;
+}
+
+.list li {
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0 0 20px 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.list li ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.list li ul li {
+    padding: 0;
+    margin: 0 0 20px 0;
+    cursor: pointer;
+    font-size: 14px;
+}
