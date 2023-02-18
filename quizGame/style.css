@@ -1,0 +1,71 @@
+@import url('https://fonts.cdnfonts.com/css/muli');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background: rgb(202,231,240);
+    background: linear-gradient(90deg, rgb(164, 214, 229) 0%, rgba(31,255,251,1) 97%);
+}
+
+.quiz-container {
+    width: 500px;
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.quiz-header h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 22px;
+}
+
+.quiz-header ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.quiz-header ul li {
+    margin: 20px 0;
+    font-size: 18px;
+    font-family: inherit;
+}
+
+.quiz-header ul li input {
+    margin-right: 10px;
+}
+
+button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 40px;
+    border: 0;
+    cursor: pointer;
+    background-color:rgb(36, 149, 153);
+    color: #fff;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color:rgb(25, 104, 107);
+}
+
+button:focus {
+    outline: none;
+}
