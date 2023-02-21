@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1e1d1e;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    height: 1px;
+    width: 100px;
+    background-color: yellow;
+    animation: trip 3s linear infinite;
+}
+
+@keyframes trip {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(100vw);
+    }
+}
